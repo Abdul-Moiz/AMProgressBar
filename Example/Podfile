@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AMProgressBar_Example' do
+  pod 'AMProgressBar', :path => '../'
+
+  target 'AMProgressBar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
