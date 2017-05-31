@@ -1,0 +1,22 @@
+{
+  "name": "AMProgressBar",
+  "version": "0.1.0",
+  "summary": "Beautiful progress bar for your iOS apps.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Abdul-Moiz/AMProgressBar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Abdul Moiz": "abdul.moiz1991@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Abdul-Moiz/AMProgressBar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source_files": "AMProgressBar/Classes/**/*"
+}

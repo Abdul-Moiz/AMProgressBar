@@ -1,22 +1,213 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AMProgressBar_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCZ-Wg-8BB" customClass="AMProgressBar" customModule="AMProgressBar">
+                                <rect key="frame" x="10" y="138" width="355" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jMM-6w-xWz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                        <color key="value" red="0.35294117650000001" green="0.68235294120000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35294117650000001" green="0.68235294120000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="stripesColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.1156566723" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideStripes" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yoT-1X-4aK" customClass="AMProgressBar" customModule="AMProgressBar">
+                                <rect key="frame" x="10" y="208" width="355" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jTd-1I-MFX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                        <color key="value" red="0.92156862750000001" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="stripesColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.1156566723" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideStripes" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdP-HE-yjd" customClass="AMProgressBar" customModule="AMProgressBar">
+                                <rect key="frame" x="10" y="278" width="355" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oPv-bT-2uo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                        <color key="value" red="0.21960784310000001" green="0.77647058820000003" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideStripes" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textPosition">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7f-79-aii" customClass="AMProgressBar" customModule="AMProgressBar">
+                                <rect key="frame" x="10" y="348" width="355" height="40"/>
+                                <color key="backgroundColor" red="0.21960784310000001" green="0.77647058820000003" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IpK-6R-ffx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                        <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="stripesColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.1156566723" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideStripes" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textPosition">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMN-FY-FtL" customClass="AMProgressBar" customModule="AMProgressBar">
+                                <rect key="frame" x="10" y="418.5" width="355" height="40"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VhQ-O5-Z6f"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.92156862750000001" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="stripesColor">
+                                        <color key="value" red="0.92156862750000001" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideStripes" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textPosition">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lk0-by-s4c" customClass="AMProgressBar" customModule="AMProgressBar">
+                                <rect key="frame" x="10" y="488.5" width="355" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ah7-l7-JyS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                        <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="stripesColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.1156566723" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideStripes" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textPosition">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="stripesMotion">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="stripesOrientation">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MdP-HE-yjd" secondAttribute="trailing" constant="10" id="2LK-d8-18H"/>
+                            <constraint firstItem="yoT-1X-4aK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="2QO-JZ-4fq"/>
+                            <constraint firstAttribute="trailing" secondItem="Lk0-by-s4c" secondAttribute="trailing" constant="10" id="5tv-ac-lHr"/>
+                            <constraint firstItem="eMN-FY-FtL" firstAttribute="top" secondItem="F7f-79-aii" secondAttribute="bottom" constant="30" id="H0z-YB-RbO"/>
+                            <constraint firstItem="eMN-FY-FtL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="L1Y-rs-6Ik"/>
+                            <constraint firstItem="TCZ-Wg-8BB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="O26-kR-5ug"/>
+                            <constraint firstItem="F7f-79-aii" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="SZ0-uy-gnH"/>
+                            <constraint firstItem="F7f-79-aii" firstAttribute="top" secondItem="MdP-HE-yjd" secondAttribute="bottom" constant="30" id="Zep-Fz-h1T"/>
+                            <constraint firstItem="MdP-HE-yjd" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-35" id="dSS-7E-Ure"/>
+                            <constraint firstAttribute="trailing" secondItem="eMN-FY-FtL" secondAttribute="trailing" constant="10" id="ekQ-mo-N3Z"/>
+                            <constraint firstAttribute="trailing" secondItem="TCZ-Wg-8BB" secondAttribute="trailing" constant="10" id="iwd-Vu-v5Q"/>
+                            <constraint firstItem="yoT-1X-4aK" firstAttribute="top" secondItem="TCZ-Wg-8BB" secondAttribute="bottom" constant="30" id="lTX-oB-gOa"/>
+                            <constraint firstItem="Lk0-by-s4c" firstAttribute="top" secondItem="eMN-FY-FtL" secondAttribute="bottom" constant="30" id="nvC-ja-LrZ"/>
+                            <constraint firstAttribute="trailing" secondItem="yoT-1X-4aK" secondAttribute="trailing" constant="10" id="oVn-BL-OLJ"/>
+                            <constraint firstItem="MdP-HE-yjd" firstAttribute="top" secondItem="yoT-1X-4aK" secondAttribute="bottom" constant="30" id="qb9-wh-LHa"/>
+                            <constraint firstItem="MdP-HE-yjd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="rQI-Xl-pgz"/>
+                            <constraint firstItem="Lk0-by-s4c" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="vgd-gd-WRe"/>
+                            <constraint firstAttribute="trailing" secondItem="F7f-79-aii" secondAttribute="trailing" constant="10" id="z7M-5X-4g9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressBar1" destination="TCZ-Wg-8BB" id="Chq-TV-Y5s"/>
+                        <outlet property="progressBar2" destination="yoT-1X-4aK" id="xrm-Tc-Sxc"/>
+                        <outlet property="progressBar3" destination="MdP-HE-yjd" id="HBR-IY-Ycq"/>
+                        <outlet property="progressBar4" destination="F7f-79-aii" id="tHT-V5-b0Y"/>
+                        <outlet property="progressBar5" destination="eMN-FY-FtL" id="1S2-Pn-p3l"/>
+                        <outlet property="progressBar6" destination="Lk0-by-s4c" id="Vbd-YM-ftb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

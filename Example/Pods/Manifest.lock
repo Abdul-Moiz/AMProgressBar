@@ -1,0 +1,16 @@
+PODS:
+  - AMProgressBar (0.1.0)
+
+DEPENDENCIES:
+  - AMProgressBar (from `../`)
+
+EXTERNAL SOURCES:
+  AMProgressBar:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AMProgressBar: c71cf10a56d8f64303a012b2fe440d7f1f843543
+
+PODFILE CHECKSUM: 42015d643be8907fbfca68a3209e8d8ad9180a36
+
+COCOAPODS: 1.2.1

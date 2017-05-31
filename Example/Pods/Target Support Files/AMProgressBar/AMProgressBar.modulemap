@@ -1,0 +1,6 @@
+framework module AMProgressBar {
+  umbrella header "AMProgressBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

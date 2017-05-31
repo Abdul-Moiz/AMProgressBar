@@ -1,42 +1,23 @@
-#
-# Be sure to run `pod lib lint AMProgressBar.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'AMProgressBar'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of AMProgressBar.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Elegant progress bar for your iOS app written in Swift.'
+  s.homepage         = 'https://github.com/Abdul-Moiz/AMProgressBar'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'Abdul Moiz' => 'abdul.moiz1991@gmail.com' }
+  s.source           = { :git => 'https://github.com/Abdul-Moiz/AMProgressBar.git', :tag => s.version.to_s }
+  s.platform = :ios, '8.0'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+    Elegant progress bar for your iOS app written in Swift.
 
-  s.homepage         = 'https://github.com/acct<blob>=<NULL>/AMProgressBar'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'acct<blob>=<NULL>' => 'amoiz@crosscap.com' }
-  s.source           = { :git => 'https://github.com/acct<blob>=<NULL>/AMProgressBar.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
+    Features
+      * Up-to-date: Swift 3
+      * Super easy to use and lightweight
+      * `IBInspectable` properties can be customized from `Interface Builder`
+      * Global config file to apply same style across app.
+  DESC
 
   s.source_files = 'AMProgressBar/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'AMProgressBar' => ['AMProgressBar/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
