@@ -53,7 +53,7 @@ AMProgressBar.config.textPosition = .onBar // AMProgressBarTextPosition
 
 When using AMProgressBar, it is recommended to use the `customize(block:)` method to customize it. The reason is that AMProgressBar is reacting to each property that you set. So if you set 3 properties, the progress bar is refreshed 3 times.
 
-When using `customize(block:)`, you can group all the customizations on the progress bar, that way AMProgressBar is only going to refresh the it self once.
+When using `customize(block:)`, you can group all the customizations on the progress bar, that way AMProgressBar is only going to refresh it self once.
 
 Example:
 
