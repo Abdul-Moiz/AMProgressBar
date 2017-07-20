@@ -213,6 +213,18 @@ open class AMProgressBar: UIView {
         configureView()
     }
     
+    open override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        if barMode_ == .undetermined {
+            configureView()
+        } else {
+            let rect = CGRect(x:0, y: 0, width: frame.width, height: frame.height)
+            let path = UIBezierPath(roundedRect: rect, cornerRadius: barCornerRadius)
+            barLayer?.path = path.cgPath
+        }
+    }
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
@@ -235,10 +247,10 @@ open class AMProgressBar: UIView {
     // MARK: - Configuration Methods
     private func configureView() {
         if customizing == true { return }
-        self.clipsToBounds = false
-        self.layer.cornerRadius = cornerRadius
-        self.layer.borderWidth = borderWidth
-        self.layer.borderColor = borderColor.cgColor
+        clipsToBounds = false
+        layer.cornerRadius = cornerRadius
+        layer.borderWidth = borderWidth
+        layer.borderColor = borderColor.cgColor
         
         configureListeners()
         configureBarLayer()
