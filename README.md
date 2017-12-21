@@ -86,7 +86,7 @@ progressBar.customize { bar in
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-* Swift 3
+* Swift 4
 * iOS 8.0+
 
 ## Installation
