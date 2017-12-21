@@ -59,9 +59,10 @@ class ViewController: UIViewController {
         progressBar.hideStripes = false
         progressBar.stripesColor = UIColor.white
         progressBar.stripesWidth = 10
-        progressBar.stripesDelta = 10
+        progressBar.stripesDelta = 100
         progressBar.stripesMotion = AMProgressBarStripesMotion.right.rawValue
         progressBar.stripesOrientation = AMProgressBarStripesOrientation.diagonalRight.rawValue
+        progressBar.stripesSpacing = 50
         
         progressBar.textColor = UIColor.black
         progressBar.textFont = UIFont.systemFont(ofSize: 12)

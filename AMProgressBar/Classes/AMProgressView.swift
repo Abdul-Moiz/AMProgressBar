@@ -58,6 +58,7 @@ open class AMProgressBar: UIView {
         static public var stripesMotion: AMProgressBarStripesMotion = .right
         static public var stripesOrientation: AMProgressBarStripesOrientation = .diagonalRight
         static public var stripesWidth: CGFloat = 30
+        static public var stripesSpacing: CGFloat = 30
         static public var stripesDelta: CGFloat = 80
         
         // Percentage Text Config
@@ -117,6 +118,12 @@ open class AMProgressBar: UIView {
     }
     
     @IBInspectable open var stripesWidth: CGFloat = config.stripesWidth {
+        didSet {
+            configureView()
+        }
+    }
+    
+    @IBInspectable open var stripesSpacing: CGFloat = config.stripesSpacing {
         didSet {
             configureView()
         }
@@ -300,7 +307,7 @@ open class AMProgressBar: UIView {
         
         for i in -1...stripesCount + 1 {
             let stripe = CAShapeLayer()
-            let rect = CGRect(x:(stripesWidth * CGFloat(i))*2, y: 0, width: stripesWidth, height: frame.height)
+            let rect = CGRect(x:((stripesWidth + stripesSpacing) * CGFloat(i)), y: 0, width: stripesWidth, height: frame.height)
             let path = getStripeShape(rect: rect)
             
             stripe.path = path.cgPath
@@ -363,6 +370,10 @@ open class AMProgressBar: UIView {
     }
     
     // MARK: - Animation Methods
+    public func startAnimation() {
+        addStripeAnimation()
+    }
+    
     @objc private func addStripeAnimation() {
         guard let stripeLayers = stripeLayers, hideStripes == false && stripesMotion_ != .none else {
             // If there are any stripes but animation is none
@@ -377,7 +388,7 @@ open class AMProgressBar: UIView {
             anim.duration = CFTimeInterval(stripesDelta/60)
             anim.repeatCount = Float.greatestFiniteMagnitude
             anim.fromValue = 0
-            anim.toValue = stripesWidth * 2 * CGFloat(direction)
+            anim.toValue = (stripesWidth + stripesSpacing) * CGFloat(direction)
             stripeLayer.add(anim, forKey: "transform.translation.x")
         }
         isStripesAnimating = true
