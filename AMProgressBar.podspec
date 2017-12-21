@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AMProgressBar'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
 
   s.summary          = 'Elegant progress bar for your iOS app written in Swift.'
   s.homepage         = 'https://github.com/Abdul-Moiz/AMProgressBar'
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     Elegant progress bar for your iOS app written in Swift.
 
     Features
-      * Up-to-date: Swift 3
+      * Up-to-date: Swift 4
       * Super easy to use and lightweight
       * `IBInspectable` properties can be customized from `Interface Builder`
       * Global config file to apply same style across app.

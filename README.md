@@ -5,7 +5,7 @@ Elegant progress bar for your iOS app written in Swift.
 
 ## Features
 
-* Up-to-date: Swift 3
+* Up-to-date: Swift 4
 * Super easy to use and lightweight
 * `IBInspectable` properties can be customized from `Interface Builder`
 * Global config file to apply same style across app.
@@ -43,6 +43,7 @@ AMProgressBar.config.stripesDelta = 80
 AMProgressBar.config.stripesMotion = .right // .none or .left
 AMProgressBar.config.stripesOrientation = .diagonalRight // .diagonalLeft or .vertical
 AMProgressBar.config.stripesWidth = 30
+AMProgressBar.config.stripesSpacing = 30
 
 AMProgressBar.config.textColor = .black
 AMProgressBar.config.textFont = UIFont.systemFont(ofSize: 12)
@@ -70,6 +71,7 @@ progressBar.customize { bar in
     bar.hideStripes = false
     bar.stripesColor = UIColor.white
     bar.stripesWidth = 10
+    bar.stripesSpacing = 10
     bar.stripesDelta = 10
     bar.stripesMotion = AMProgressBarStripesMotion.right.rawValue
     bar.stripesOrientation = AMProgressBarStripesOrientation.diagonalRight.rawValue

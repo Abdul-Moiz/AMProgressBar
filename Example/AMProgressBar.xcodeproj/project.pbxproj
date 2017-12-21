@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F420854100789784CF7FB8E /* AMProgressBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AMProgressBar.podspec; path = ../AMProgressBar.podspec; sourceTree = "<group>"; };
+		1F420854100789784CF7FB8E /* AMProgressBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AMProgressBar.podspec; path = ../AMProgressBar.podspec; sourceTree = "<group>"; };
 		271045CF3D026073441E91E9 /* Pods-AMProgressBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMProgressBar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMProgressBar_Example/Pods-AMProgressBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		454858EF89AB61D1E1863D0B /* Pods-AMProgressBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMProgressBar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMProgressBar_Example/Pods-AMProgressBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		481447A01317D620165C5FA1 /* Pods-AMProgressBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMProgressBar_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMProgressBar_Tests/Pods-AMProgressBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,8 +44,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		642547F0A58E9615E486E058 /* Pods_AMProgressBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMProgressBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7756CEA9700CD35CD7773ACC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		9F29B59EB5167B75D1E673E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7756CEA9700CD35CD7773ACC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9F29B59EB5167B75D1E673E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A9E726EB7A105F624B9DD27F /* Pods-AMProgressBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMProgressBar_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMProgressBar_Tests/Pods-AMProgressBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,11 +215,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0910;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0910;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -501,7 +501,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -515,7 +516,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -535,7 +537,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -551,7 +554,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
