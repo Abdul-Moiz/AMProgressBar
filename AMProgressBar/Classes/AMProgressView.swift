@@ -336,9 +336,9 @@ open class AMProgressBar: UIView {
         
     }
     
-    private func configureListeners() {
+     private func configureListeners() {
         NotificationCenter.default.removeObserver(self)
-        NotificationCenter.default.addObserver(self, selector: #selector(resumeActions(notification:)), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(resumeActions(notification:)), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     
     // MARK: - Helping Methods
@@ -406,7 +406,7 @@ open class AMProgressBar: UIView {
         if animated == true {
             let anim = CABasicAnimation(keyPath: "bounds")
             anim.duration = CFTimeInterval(animationDuration)
-            anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+            anim.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
             anim.fromValue = NSValue(cgRect: oldBounds)
             anim.toValue = NSValue(cgRect: newBounds)
             anim.isRemovedOnCompletion = true
@@ -458,7 +458,7 @@ open class AMProgressBar: UIView {
                 
                 let anim = CABasicAnimation(keyPath: "position")
                 anim.duration = CFTimeInterval(animationDuration)
-                anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+                anim.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
                 anim.fromValue = NSValue(cgPoint: oldCenter)
                 anim.toValue = NSValue(cgPoint: newCenter)
                 anim.isRemovedOnCompletion = true
