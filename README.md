@@ -96,7 +96,7 @@ AMProgressBar is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-platform :ios, '8.0'
+platform :ios, '12.0'
 use_frameworks!
 
 pod "AMProgressBar"
