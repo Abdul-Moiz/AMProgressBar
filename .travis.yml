@@ -2,13 +2,17 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode9.2
-language: objective-c
+osx_image: xcode10.2
+language: swift
 # cache: cocoapods
 # podfile: Example/Podfile
+xcode_project: Example/AMProgressBar.xcworkspace # path to your xcodeproj folder
+xcode_scheme: AMProgressBar-Example
+xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone X
+
 before_install:
 - gem install cocoapods # Since Travis is not always on latest version
 - pod install --project-directory=Example
-script:
-- set -o pipefail && xcodebuild test -workspace Example/AMProgressBar.xcworkspace -scheme AMProgressBar-Example -sdk iphonesimulator11.2 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+#script:
+#- set -o pipefail && xcodebuild test -workspace Example/AMProgressBar.xcworkspace -scheme AMProgressBar-Example -sdk iphonesimulator11.2 ONLY_ACTIVE_ARCH=NO | xcpretty
+#- pod lib lint
