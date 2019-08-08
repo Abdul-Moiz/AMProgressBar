@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Abdul Moiz' => 'abdul.moiz1991@gmail.com' }
   s.source           = { :git => 'https://github.com/Abdul-Moiz/AMProgressBar.git', :tag => s.version.to_s }
   s.platform = :ios, '12.0'
+  s.swift_versions = '5'
 
   s.description      = <<-DESC
     Elegant progress bar for your iOS app written in Swift.
