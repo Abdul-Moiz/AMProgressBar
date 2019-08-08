@@ -5,7 +5,7 @@ Elegant progress bar for your iOS app written in Swift.
 
 ## Features
 
-* Up-to-date: Swift 4
+* Up-to-date: Swift 5
 * Super easy to use and lightweight
 * `IBInspectable` properties can be customized from `Interface Builder`
 * Global config file to apply same style across app.
@@ -86,8 +86,8 @@ progressBar.customize { bar in
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-* Swift 4
-* iOS 8.0+
+* Swift 5
+* iOS 12.0+
 
 ## Installation
 
