@@ -70,10 +70,6 @@ class ViewController: UIViewController {
         
         progressBar.progressValue = 1
         
-//        progressBar.customize { (bar: AMProgressBar) in
-//            bar.cornerRadius = 10
-//        }
-        
         progressBar.setProgress(progress: 1, animated: true)
         
         
@@ -95,7 +91,7 @@ class ViewController: UIViewController {
             self.progressBar6.setProgress(progress: 0, animated: true)
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.progressBar1.setProgress(progress: 0.2, animated: true)
             self.progressBar2.setProgress(progress: 0.2, animated: true)
             self.progressBar3.setProgress(progress: 0.2, animated: true)
@@ -104,7 +100,7 @@ class ViewController: UIViewController {
             self.progressBar6.setProgress(progress: 0.2, animated: true)
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             self.progressBar1.setProgress(progress: 0.5, animated: true)
             self.progressBar2.setProgress(progress: 0.5, animated: true)
             self.progressBar3.setProgress(progress: 0.5, animated: true)
@@ -113,7 +109,7 @@ class ViewController: UIViewController {
             self.progressBar6.setProgress(progress: 0.5, animated: true)
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 8) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.progressBar1.setProgress(progress: 0.8, animated: true)
             self.progressBar2.setProgress(progress: 0.8, animated: true)
             self.progressBar3.setProgress(progress: 0.8, animated: true)
@@ -122,7 +118,7 @@ class ViewController: UIViewController {
             self.progressBar6.setProgress(progress: 0.8, animated: true)
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
             self.progressBar1.setProgress(progress: 1, animated: true)
             self.progressBar2.setProgress(progress: 1, animated: true)
             self.progressBar3.setProgress(progress: 1, animated: true)
@@ -131,7 +127,7 @@ class ViewController: UIViewController {
             self.progressBar6.setProgress(progress: 1, animated: true)
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 12) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
             self.testAnimation()
         }
     }

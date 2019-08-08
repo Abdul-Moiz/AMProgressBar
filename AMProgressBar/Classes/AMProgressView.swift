@@ -333,7 +333,6 @@ open class AMProgressBar: UIView {
         updateTextPosition()
         
         self.addSubview(textLabel!)
-        
     }
     
      private func configureListeners() {
